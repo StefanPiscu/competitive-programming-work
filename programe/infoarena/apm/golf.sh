@@ -1,0 +1,1 @@
+tr -d ['\n'] < main.cpp > golf.cpp

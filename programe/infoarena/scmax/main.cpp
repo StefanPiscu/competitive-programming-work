@@ -1,0 +1,2 @@
+#import<fstream>
+std::ifstream f("scmax.in");std::ofstream g("scmax.out");int v[1<<20],p[1<<20],q[9999],i,j,Q;void a(int Z){while(p[--Z]!=Q);if(--Q)a(Z);g<<v[Z]<<" ";}main(){f>>j;for(;f>>v[i];q[j]=v[i++]){for(j=0;v[i]>q[j]&j<=Q;p[i]=++j);Q+=j>Q;}g<<Q<<" ";a(i);}
